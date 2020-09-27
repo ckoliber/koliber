@@ -1,10 +1,16 @@
 import React from "react";
-import "styles.css";
+import "./styles.css";
 
-import { ThemeProvider, createTheme } from "arwes";
+import { ThemeProvider, createTheme, Arwes } from "arwes";
 
 export default () => (
     <ThemeProvider theme={createTheme()}>
-        <div>My Project</div>
+        <Arwes>
+            <div style={{ padding: 20 }}>
+                <Button>My Button</Button>
+            </div>
+            <h1>My App</h1>
+            <p>A SciFi Project</p>
+        </Arwes>
     </ThemeProvider>
 );
